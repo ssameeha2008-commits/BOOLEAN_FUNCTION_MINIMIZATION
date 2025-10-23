@@ -34,17 +34,36 @@ Hardware – PCs, Cyclone II , USB flasher
 **Program:**
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
+module EXP2 (
+    input  wire A,
+    input  wire B,
+    input  wire C,
+    input  wire D,
+    output wire F
+);
 
-Developed by: RegisterNumber:*/
+assign F = (~A & B) | (C & D) | (A & ~D);
+
+endmodule
+
+```
+
+Developed by: SAMEEHA S
+
+RegisterNumber:25004324
 
 
 **RTL realization**
 
-**Output:**
+**Output:** 
 
-**RTL**
+**Output:<img width="813" height="420" alt="image" src="https://github.com/user-attachments/assets/ed52c563-2217-4099-9128-455382bc08d1" />
+**
 
 **Timing Diagram**
+
+<img width="1231" height="798" alt="image" src="https://github.com/user-attachments/assets/2be6dacd-1c0e-4332-a082-0184f1543f7f" />
 
 **Result:**
 
